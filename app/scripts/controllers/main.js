@@ -9,5 +9,9 @@
  */
 angular.module('codingDojoApp')
   .controller('MainCtrl', function () {
-    this.calculateFizzBuzz = 1;
+  	this.value = 1;
+
+    this.calculateFizzBuzz = function(value){
+    	return 1;
+    };
   });
