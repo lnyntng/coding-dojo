@@ -9,9 +9,5 @@
  */
 angular.module('codingDojoApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    this.calculateFizzBuzz = 1;
   });
