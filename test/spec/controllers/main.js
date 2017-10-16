@@ -37,5 +37,10 @@ describe('Controller: MainCtrl', function () {
       scope.calculateFizzBuzz(10);
       expect(scope.array).toEqual([1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz']);
     });
+
+    it('should equal 1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,Fizz when param value is 13', function () {
+      scope.calculateFizzBuzz(13);
+      expect(scope.array).toEqual([1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,12,'Fizz']);
+    });
   });
 });
