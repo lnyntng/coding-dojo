@@ -13,8 +13,7 @@ angular.module('codingDojoApp')
 
     $scope.calculateFizzBuzz = function(value) {
     	$scope.array = [];
-    	for (var i = 1; i < value; i++) {
-    		console.log(i);
+    	for (var i = 1; i <= value; i++) {
     		if(i % 3 === 0 || /3/.test(i)) {
     			$scope.array.push('Fizz');
     		} else if(i % 5 === 0 || /5/.test(i)) {
@@ -22,7 +21,6 @@ angular.module('codingDojoApp')
     		} else {
     			$scope.array.push(i);
     		}
-    		console.log($scope.array);
     	}
     };
   });
