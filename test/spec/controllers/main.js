@@ -19,7 +19,15 @@ describe('Controller: MainCtrl', function () {
     }));
 
     it('should equal 1 when param value is 1', function () {
-      expect(MainCtrl.calculateFizzBuzz(1)).toEqual(1);
+      expect(MainCtrl.calculateFizzBuzz(1)).toEqual('1');
+    });
+
+    it('should equal 1,2,Fizz when param value is 3', function () {
+      expect(MainCtrl.calculateFizzBuzz(3)).toEqual('1,2,Fizz');
+    });
+
+    it('should equal 1,2,Fizz,4,Buzz when param value is 5', function () {
+      expect(MainCtrl.calculateFizzBuzz(5)).toEqual('1,2,Fizz,4,Buzz');
     });
   });
 });
