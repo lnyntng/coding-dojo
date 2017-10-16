@@ -10,19 +10,20 @@
 angular.module('codingDojoApp')
   .controller('MainCtrl', function () {
   	this.value = 1;
+  	this.array = [1];
 
     this.calculateFizzBuzz = function(value) {
-    	var arr = '1';
+    	var arr = [];
     	for (var i = 2; i <= value; i++) {
     		if(i % 3 === 0) {
-    			arr += ',Fizz';
+    			arr.push('Fizz');
     		} else if(i % 5 === 0) {
-    			arr += ',Buzz';
+    			arr.push('Buzz');
     		} else {
-    			arr += ',' + i;
+    			arr.push(i);
     		}
     	}
-    	console.log(arr);
+    	this.arr = arr;
     	return arr;
     };
   });
