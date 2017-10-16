@@ -17,7 +17,7 @@ angular.module('codingDojoApp')
     		console.log(i);
     		if(i % 3 === 0 || /3/.test(i)) {
     			$scope.array.push('Fizz');
-    		} else if(i % 5 === 0) {
+    		} else if(i % 5 === 0 || /5/.test(i)) {
     			$scope.array.push('Buzz');
     		} else {
     			$scope.array.push(i);
